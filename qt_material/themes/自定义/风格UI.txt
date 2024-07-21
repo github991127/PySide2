@@ -1,0 +1,35 @@
+⚫●◯○◦◉◍◑◙◎◌
+https://github.com/UN-GCPDS/qt-material
+https://blog.csdn.net/djstavaV/article/details/127064001
+
+⚫环境下安装qt-material
+pip install qt-material
+
+⚫list_themes文件
+from list_themes import *
+apply_stylesheet(app, theme[28], extra=extra,invert_secondary=True)  # 默认dark-False
+
+⚫xml文件自定义
+E:\anaconda\envs\pyside2\Lib\site-packages\qt_material\themes
+
+<color name="primaryColor">#000000</color>主字色，如各种字，选中框线①
+<color name="primaryLightColor">#aaaaaa</color>控件划选底色，如文本选中底色②
+<color name="secondaryColor">#ffffff</color>控件底色，如文本框背景色，单击框背景色③
+<color name="secondaryLightColor">#ffffff</color>整体背景色，invert_secondary=True④
+<color name="secondaryDarkColor">#ffffff</color>整体背景色，invert_secondary=False⑤
+<color name="primaryTextColor">#555555</color>控件划选字色，如文本选中字，未选中控件字⑥
+<color name="secondaryTextColor">#aaaaaa</color>其他，如未选中控件框线，未选中菜单字⑦
+
+①主题色1，文本框文字，选中控件框线
+②主题色2，文字选中底色
+③控件背景色，与①互补
+④⑤点击控件时的背景色，与③不同
+⑥选中文字，默认控件文字，与②互补
+⑦控件框线，控件文字，与③互补，与④⑤不同
+
+文本框提示为①浅色自动生成，①⑥⑦可以相同
+
+dark：⑥改为②，②改为#555555
+
+
+333333

@@ -1,0 +1,36 @@
+⚫●◯○◦◉◍◑◙◎◌
+————————————————————————
+conda info --envs
+conda activate pyside_base
+pyinstaller Identity_main.py --noconsole --hidden-import PySide2.QtXml --icon="image.ico"
+
+————————————————————————
+https://www.byhy.net/tut/py/gui/qt_04/
+https://www.byhy.net/tut/py/etc/toexe/
+
+⚫cmd文件目录
+cd
+
+⚫pyside环境
+conda activate 
+
+⚫pyinstaller程序打包
+pyinstaller 【.py】 --noconsole --hidden-import PySide2.QtXml --icon=【"logo.ico"】
+【.py】：主文件名
+--noconsole：执行exe文件不打开cmd
+--hidden-import PySide2.QtXml：动态加载UI
+--icon=【"logo.ico"】exe文件图标
+
+⚫ui，png等文件拷贝到目录下
+
+⚫报错
+●报错信息：This application failed to start because no Qt platform plugin
+环境中的PySide2\plugins\platforms的dll文件移入打包对应位置
+E:\anaconda\envs\pyside2\Lib\site-packages\PySide2\plugins\platforms
+E:\workplace_py\20221004_zhangchangpu_cal\dist\ui\PySide2\plugins\platforms
+
+
+
+
+
+
